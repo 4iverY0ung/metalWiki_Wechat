@@ -1,0 +1,12 @@
+/* pages/reg/reg.wxss */
+
+ 
+  label switch{
+    margin: 10px;
+  }
+  label input{
+    flex: 1;
+    padding: 0 0 0 20rpx;
+    height: 80rpx;
+    outline: solid 1px #888;
+  }

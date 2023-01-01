@@ -1,0 +1,11 @@
+<!--pages/selfCenter/selfCenter.wxml-->
+
+<include src="/pages/homepage/headNavigation"/>
+<view>
+  <label><text>账号：{{id}}</text></label>
+  <label><text>姓名：{{name}}</text></label>
+  <label><text>密码：{{password}}</text></label> 
+  <label><text>身份：{{identify}}</text></label> 
+</view>
+<button bindtap="findPassword" class="btn">修改密码</button>
+<button bindtap="logOut" class="btn">用户注销</button>

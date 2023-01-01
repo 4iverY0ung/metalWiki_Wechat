@@ -1,0 +1,28 @@
+image{
+  border-radius: 50rpx;
+  box-shadow: 0rpx 30rpx 20rpx 0 grey;
+}
+
+.imgout{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.textcontent{
+  justify-content: center;
+  border:grey solid 5rpx ;
+  margin-top: 5rpx;
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+  width: auto;
+  display: block;
+  line-height: 80rpx;
+  font-size: 15px;
+  
+}
+.last{
+    padding-bottom: 120rpx;
+}

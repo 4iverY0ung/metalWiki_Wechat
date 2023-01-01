@@ -1,0 +1,16 @@
+<view class="player">
+    <image class="player-cover" src="{{songImg}}"/>
+    <view class="">
+        <view class="player-info">
+            <view class="player-info-title">{{songName}}</view>
+            <view class="player-info-singer">{{songArtist}}</view>
+        </view>
+        
+    </view>
+
+    <view class="player-controls">
+      <image wx:if="{{state=='paused'}}" src="/images/drumstop.png" bindtap="play" />
+      <image wx:elif="{{state=='running'}}" src="/images/drumac.png" bindtap="pause" />
+    </view>
+    <text class="right">播放</text>
+</view>

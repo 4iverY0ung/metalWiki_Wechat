@@ -1,0 +1,145 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.btn {
+  width: 200rpx !important;
+  border-radius: 50rpx;
+  color: white;
+  font-size: 25rpx;
+  background-color: rgb(248, 61, 28);
+  margin:  20rpx auto;
+}
+
+.btn:active{
+  background-color: grey;
+}
+
+label{
+  display: flex;
+  justify-content: flex-start;
+  width: 720rpx;
+  margin: 10rpx 0;
+  margin-left: 15rpx;
+}
+label text{
+  width: 150rpx;
+  display: block;
+  line-height: 80rpx;
+  font-size: 15px;
+}
+label input{
+  flex: 1;
+  padding: 0 0 0 20rpx;
+  height: 80rpx;
+  outline: solid 2px rgb(226, 253, 128);
+}
+
+.tab {
+    display: flex;
+    background-color:  rgba(1, 94, 78, 0.815);
+   
+   
+  }
+
+  .tab-item {
+    flex: 1;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 72rpx;
+    border-bottom: 6rpx solid rgb(70, 36, 4);
+  }
+
+  .tab-item:active{
+    color: purple;
+    border-bottom-color:red;
+    background-color: rgb(253, 220, 148)
+  }
+
+  /**
+    Player
+  */
+  .player{
+    display: flex;
+    align-items: center;
+    background:rgb(150, 73, 0);
+    border-top: 1px solid #252525;
+    height: 112rpx;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+  }
+  .player-cover{
+    width: 80rpx;
+    height: 80rpx;
+    margin-left:15rpx;
+    border-radius: 10rpx;
+    border:1px solid #333;
+    box-shadow: 0rpx 10rpx 20rpx 0 rgb(141, 141, 141);
+  }
+  .player-info{
+    flex:1;
+    font-size: 10pt;
+    line-height: 38rpx; 
+    margin-left:20rpx;
+    padding-bottom: 8rpx;
+  }
+
+  .player-info-title{
+    color:rgb(51, 207, 255);
+    font-size: 25rpx;
+  }
+  .player-info-singer{
+    color:#000;
+  }                                                   
+  
+  .player-controls image{
+    width:80rpx;
+    height: 80rpx;
+    margin-right:15rpx;
+    box-shadow: 0rpx 10rpx 20rpx 0 rgb(141, 141, 141);
+  }
+  .player-controls{
+    flex: 1;
+    display: block;
+    position: absolute;
+    bottom: 10rpx;
+    right: 20rpx;
+    font-size: 10pt;
+    margin-right:20rpx;
+  }
+
+  .right{
+    flex: 1;
+    position: absolute;
+    right: 150rpx;
+  }
+
+  .bottom{
+    display: block;
+    padding-bottom: 100px;
+    border: black solid  10rpx;
+    background-color: rgb(56, 32, 0);
+  }
+
+  .bottom view{
+  border:solid rgb(248, 214, 152) 5rpx;
+   width: 95%;
+   line-height: 70rpx;
+   text-align: center;
+   background-color: rgb(56, 32, 0);
+   color: rgb(185, 125, 98);
+   height: 80rpx;
+   margin-top: 10rpx;
+   margin-right: 5rpx;
+   position: relative;
+   right: -15rpx;
+  }

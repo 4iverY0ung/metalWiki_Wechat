@@ -1,0 +1,46 @@
+
+<!-- 表单部分 -->
+<view>
+  <form bindsubmit="submit">
+  <!-- 账号 -->
+    <label for="id">
+    <text>账号:</text>
+      <input type="text" placeholder="请输入账号" name="id"/>
+    </label>
+
+    <label for="name">
+        <text>姓名</text>
+        <input type="text" placeholder="请输入姓名" name="name"/>
+    </label>
+<!-- 密码 -->
+    <label for="password">
+      <text>密码:</text>
+      <input type="password" placeholder="请输入密码" name="pwd"/>
+    </label>
+
+    <label for="confirm">
+      <text>确认密码:</text>
+      <input type="password" placeholder="请输入密码" name="confirm"/>
+    </label>
+
+    
+    <label for="identify">
+        <text>身份验证</text>
+        <radio-group name="identify">
+        <radio value="User">用户</radio>
+        <radio value="Admin">管理员</radio>
+        </radio-group>
+    </label>
+
+    <!-- 是否同意 -->
+    <label for="gander">
+      <switch type="checkbox" bindchange="agree"></switch>
+      <text style="width:300px">是否同意以上协议</text>
+    </label>
+    <!-- 提交按钮 -->
+    <label for="">
+      <button type="primary" disabled="{{ !isAgree }}" form-type="submit" class="btn">提交</button>
+    </label>
+  </form>
+
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/homepage/hompage",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/wiki/wiki",
+    "pages/selfCenter/selfCenter",
+    "pages/findPassword/findPassword"
+  ],
+  "tabBar": {
+    "color": "#707070", 
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#563200",
+    "list": [
+        {
+            "text": "专辑与乐队",
+            "pagePath": "pages/homepage/hompage",
+            "iconPath": "images/You-Rock2.png",
+            "selectedIconPath": "images/You-Rock.png"
+        },
+        {
+            "text": "个人中心",
+            "pagePath": "pages/selfCenter/selfCenter",
+            "selectedIconPath": "images/guitars.png",
+            "iconPath": "images/guitars2.png"
+        }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#703604",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

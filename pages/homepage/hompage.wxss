@@ -1,0 +1,103 @@
+/* pages/homepage/hompage.wxss */
+
+.control{
+  line-height: 60rpx;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  text-shadow: #d1d1d1 2rpx 3rpx 6rpx;
+  background-color: rgb(110, 110, 110);
+}
+.control:active{
+  background-color: rgb(139, 139, 139);
+}
+
+/**/
+.swiper{
+    height: 320px;
+    width: 100%;
+}
+
+
+
+
+.swiper .wx-swiper-dot{ 
+  height: 12rpx;
+  width: 12rpx;
+  background: rgba(255, 255, 255, .6)
+  }
+
+
+  .swiper .wx-swiper-dot-active{
+    width: 36rpx;
+    height: 12rpx;
+    border-radius: 6rpx;
+    background: rgba(255, 255, 255, .8)
+}
+
+
+swiper-item{
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.slide-image{
+    height: 80%;
+    width: 80%;
+ }
+
+.background{
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+}
+
+
+
+  image{
+      border-radius: 50rpx;
+      border:solid 5rpx rgb(0, 174, 255);
+      box-shadow: 0rpx 30rpx 20rpx 0 rgb(209, 253, 246);
+  }
+
+  .album picker{
+    width: 95%;
+    text-align: center;
+    background-color: rgba(141, 80, 0, 0.815);
+    line-height: 80rpx;
+    font-size: 20px;
+    text-shadow: rgb(100, 98, 189) 2px 2px 6px;
+    border: rgb(7, 7, 7) solid 5rpx;
+    position: relative;
+    right: -13rpx;
+    border-radius: 20rpx;
+    margin-bottom: 5rpx;
+  }
+
+  .band picker{
+    width: 95%;
+    text-align: center;
+    background-color: rgba(1, 94, 78, 0.815);
+    line-height: 80rpx;
+    font-size: 20px;
+    text-shadow:  rgb(100, 98, 189) 2px 2px 6px;
+    border: rgb(7, 7, 7) solid 5rpx;
+    position: relative;
+    right: -13rpx;
+    border-radius: 20rpx;
+    margin-bottom: 5rpx;
+  }
+  .mini{
+      
+      border-radius: 20rpx;
+      box-shadow: 0rpx 30rpx 20rpx 0 grey;
+  }
+  .mid{
+    background-color: rgb(104, 38, 0);
+    padding: 10rpx;
+    margin-bottom: -10rpx;
+    border:  solid 8rpx ;
+  }

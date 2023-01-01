@@ -1,0 +1,16 @@
+<!--pages/wiki/wiki.wxml-->
+<include src="/pages/homepage/headNavigation"/>
+
+<view>
+  
+</view>
+<view>
+
+<view class="imgout"><image src="{{imageU}}"/></view>
+<view class="textcontent">专辑名称: {{albumInfo.AlbumName}}</view>
+<view class="textcontent">专辑艺人: {{albumInfo.AlbumArtist}}</view>
+<view class="textcontent">发行日期: {{albumInfo.LaunchDate}}</view>
+<view class="textcontent">出版商: {{albumInfo.Publisher}}</view>
+<view class="textcontent,last">简介: {{albumInfo.AlbumInfo}}</view>
+<include src="/pages/homepage/player"/>
+</view>

@@ -1,0 +1,76 @@
+<!--pages/homepage/hompage.wxml-->
+
+<!--顶部导航-->
+<!--
+    <view class="tab">
+    <view class="tab-item">首页</view>
+    <view class="tab-item" bindtap="selfCenter">个人信息</view>
+    <view class="tab-item" bindtap="LogIn">登录</view>
+    <view class="tab-item" bindtap="Register">注册</view>
+</view>
+-->
+
+<include src="../homepage/headNavigation"/>
+
+
+<!--抛弃不用
+<view>
+  <button class="btn" bindtap="Register" style="display: {{none}};">注册</button>
+  <button class="btn" bindtap="LogIn" style="display: {{none}};">登录</button>
+</view>
+-->
+
+<!--中间轮播图-->
+<view class="background">
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <swiper-item wx:if="{{index<10}}" wx:for="{{imgUrls}}">
+            <image src="{{item}}" class="slide-image"/>
+        </swiper-item>  
+</swiper>
+</view>
+
+<!--底部导航-->
+
+
+<view class="mid">
+<view class="band">
+    <picker mode="selector" range="{{songNames}}" bindchange='setSongInfo'>音乐试听</picker>
+</view>
+
+<view class="album">
+    <picker mode="selector" range="{{albumName}}" bindchange='getAlbum'>专辑简介</picker>
+</view>
+</view>
+
+
+
+
+<view class="bottom">
+
+
+  <view wx:if="{{index<10}}" wx:for="{{albumName}}" wx:for-key="index" data-index="{{index}}" bindtap="onJump">
+    {{item}} 
+  </view>
+
+
+
+<!--
+  <view>
+  <view wx:for="{{snaP}}" wx:for-key="index" data-index="{{index}}" wx:for-item='item'>
+  <view wx:if="{{index==3}}" wx:for="{{item}}" wx:for-item='i' wx:for-key="indexs">
+    {{i[0]}}
+  </view>
+  </view>
+</view>
+-->
+
+
+
+
+
+
+</view>
+
+
+
+<include src="/pages/homepage/player"/>

@@ -1,0 +1,6 @@
+<!--pages/headNavigation/headNavigation.wxml-->
+<view class="tab">
+    <view class="tab-item" bindtap="LogIn">登录</view>
+    <view class="tab-item" bindtap="toHomepage">首页</view>
+    <view class="tab-item" bindtap="Register">注册</view>
+</view>

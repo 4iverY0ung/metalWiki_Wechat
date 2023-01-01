@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view>
+<form bindsubmit="logsubmit">
+    <label for="LogID">
+        <text>登录账号:</text>
+        <input type="text" name="LogID" placeholder="请输入账号"/>
+    </label>
+    <label for="LogPas">
+        <text>登录密码:</text>
+        <input type="password" name="LogPas" placeholder="请输入密码"/>
+    </label>
+    <label>
+        <button form-type="submit" class="btn">提交</button>
+    </label>
+    <label>
+      <button bindtap="findPassword" class="btn">找回密码</button>
+    </label>
+</form>
+</view>
+   
+
+
